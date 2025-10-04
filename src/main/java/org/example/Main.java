@@ -21,6 +21,11 @@ public class Main {
             else {
                 System.out.println("connection not maded");
             }
+            String query="insert into address (id,location) values ('6','vidisha')";
+            Statement st=con.createStatement();
+
+            st.executeUpdate(query);
+            System.out.println("Data stored successfully");
             con.close();
         } catch (Exception e) {
             System.out.println(e);
